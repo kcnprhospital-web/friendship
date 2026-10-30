@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>មិត្តភាពជារៀងរហូត · UHS ជំនាន់ទី៣៣</title>
+<meta name="description" content="ប្រមូលទំនាក់ទំនងមិត្តរួមថ្នាក់ សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល ជំនាន់ទី៣៣">
+<meta property="og:title" content="មិត្តភាពជារៀងរហូត · UHS ជំនាន់ទី៣៣">
+<meta property="og:description" content="Reconnect with your University of Health Sciences 33rd promotion classmates.">
+<meta name="theme-color" content="#1b1033">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤝</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moul&family=Kantumruy+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#1b1033; --plum:#3d1d4f; --rose:#b8476a; --gold:#f2c46d; --gold-soft:#f8deaa;
+  --cream:#fffaf2; --ink:#2a1d33; --muted:#7c6a86; --line:#eaddd0; --ok:#2f8f6b; --err:#c0392b;
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Kantumruy Pro',system-ui,sans-serif; color:var(--ink); min-height:100vh;
+  background:linear-gradient(180deg,#120a24 0%,var(--night) 25%,var(--plum) 55%,#7a2e4f 78%,#c9665e 92%,#f0a964 100%);
+  background-attachment:fixed; overflow-x:hidden;
+}
+#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 16px 60px}
+
+/* ---------- Hero ---------- */
+header{text-align:center;color:#fff;padding:56px 0 30px}
+.emblem{
+  width:118px;height:118px;margin:0 auto 22px;position:relative;
+  display:grid;place-items:center;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff3d6 0%,var(--gold) 45%,#c98a2f 100%);
+  box-shadow:0 0 0 6px rgba(242,196,109,.18),0 0 0 14px rgba(242,196,109,.08),0 0 60px rgba(242,196,109,.55);
+  animation:glow 4s ease-in-out infinite;
+}
+.emblem span{font-family:'Moul',serif;font-size:44px;color:#5a2a12;line-height:1;margin-top:8px}
+.emblem small{position:absolute;bottom:16px;font-size:10px;letter-spacing:2px;color:#6b3a16;font-weight:600}
+@keyframes glow{50%{box-shadow:0 0 0 8px rgba(242,196,109,.22),0 0 0 18px rgba(242,196,109,.08),0 0 90px rgba(242,196,109,.7)}}
+.uni{font-size:15px;color:var(--gold-soft);font-weight:500;letter-spacing:.3px}
+.uni-en{font-size:12px;color:rgba(255,255,255,.6);letter-spacing:2.5px;text-transform:uppercase;margin-top:4px}
+h1{font-family:'Moul',serif;font-weight:400;font-size:clamp(30px,8vw,50px);line-height:1.5;margin:20px 0 6px;
+   background:linear-gradient(90deg,#fff 10%,var(--gold-soft) 50%,#fff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(17px,4.5vw,22px);color:var(--gold-soft)}
+.intro{max-width:560px;margin:18px auto 0;font-size:15.5px;line-height:1.9;color:rgba(255,255,255,.85)}
+
+/* ---------- Stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0 26px}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:14px 8px;text-align:center;color:#fff;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.stat b{display:block;font-size:28px;font-weight:700;color:var(--gold)}
+.stat span{font-size:12.5px;color:rgba(255,255,255,.75)}
+
+/* ---------- Card ---------- */
+.card{background:var(--cream);border-radius:var(--radius);padding:30px 24px 26px;position:relative;
+  box-shadow:0 30px 80px rgba(10,4,25,.5),0 2px 0 rgba(255,255,255,.6) inset}
+.card::before{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:2px;
+  background:linear-gradient(135deg,var(--gold),var(--rose),var(--gold));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.card-head{text-align:center;margin-bottom:22px}
+.card-head h2{font-family:'Moul',serif;font-weight:400;font-size:20px;color:var(--plum);line-height:1.7}
+.card-head p{font-size:13.5px;color:var(--muted);margin-top:4px}
+.divider{display:flex;align-items:center;gap:12px;margin:24px 0 16px;color:var(--rose);font-size:13px;font-weight:600}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
+
+.field{margin-bottom:16px}
+label.lbl{display:flex;align-items:baseline;gap:6px;font-weight:600;font-size:14.5px;margin-bottom:7px;color:var(--ink)}
+label.lbl em{font-style:normal;font-weight:400;font-size:12px;color:var(--muted)}
+.req{color:var(--rose)}
+.opt{font-size:11px;font-weight:500;color:var(--muted);background:#f3ebe0;padding:1px 8px;border-radius:20px;margin-left:auto}
+.input{position:relative}
+.input .ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:19px;height:19px;color:#b39aa6;pointer-events:none}
+input[type=text],input[type=tel],input[type=email],select{
+  width:100%;font:inherit;font-size:16px;color:var(--ink);background:#fff;border:1.5px solid var(--line);
+  border-radius:14px;padding:13px 14px 13px 44px;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none}
+select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237c6a86' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+input:focus,select:focus{border-color:var(--rose);box-shadow:0 0 0 4px rgba(184,71,106,.12)}
+.field.invalid input,.field.invalid .gender{border-color:var(--err)}
+.err{display:none;font-size:12.5px;color:var(--err);margin-top:6px}
+.field.invalid .err{display:block}
+.hint{font-size:12px;color:var(--muted);margin-top:5px}
+
+.gender{display:grid;grid-template-columns:1fr 1fr;gap:10px;border-radius:16px;border:1.5px solid transparent}
+.gender input{position:absolute;opacity:0;pointer-events:none}
+.gender label{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border-radius:14px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font-weight:500;transition:all .2s}
+.gender label:hover{border-color:var(--gold)}
+.gender input:checked+label{background:linear-gradient(135deg,var(--plum),var(--rose));color:#fff;border-color:transparent;box-shadow:0 8px 20px rgba(184,71,106,.3)}
+.gender input:focus-visible+label{box-shadow:0 0 0 4px rgba(184,71,106,.25)}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+#countryWrap{display:none;margin-top:10px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.consent{font-size:12.5px;color:var(--muted);line-height:1.7;background:#f8f1e6;border-radius:12px;padding:11px 14px;margin:6px 0 18px}
+button.submit{
+  width:100%;font:inherit;font-size:17px;font-weight:600;color:#fff;border:0;cursor:pointer;
+  padding:16px;border-radius:16px;background:linear-gradient(135deg,var(--plum) 0%,var(--rose) 60%,#d9775d 100%);
+  box-shadow:0 12px 30px rgba(184,71,106,.4);transition:transform .15s,box-shadow .2s;display:flex;align-items:center;justify-content:center;gap:10px}
+button.submit:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(184,71,106,.5)}
+button.submit:disabled{opacity:.7;cursor:wait;transform:none}
+.spinner{width:18px;height:18px;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;display:none}
+button.loading .spinner{display:block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.form-msg{display:none;margin-top:14px;padding:12px 14px;border-radius:12px;font-size:14px;background:#fdecea;color:var(--err)}
+
+/* ---------- Wall of friends ---------- */
+.wall{margin-top:34px;text-align:center;color:#fff}
+.wall h3{font-family:'Moul',serif;font-weight:400;font-size:18px;color:var(--gold-soft);line-height:1.8}
+.wall p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:16px}
+.names{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-height:260px;overflow:auto;padding:4px}
+.chip{background:rgba(255,255,255,.1);border:1px solid rgba(242,196,109,.35);color:#fff;padding:6px 14px;border-radius:30px;font-size:14px;animation:pop .4s both}
+@keyframes pop{from{opacity:0;transform:scale(.8)}}
+
+footer{text-align:center;color:rgba(255,255,255,.75);font-size:13px;margin-top:40px;line-height:1.9}
+footer .q{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:var(--gold-soft)}
+
+/* ---------- Success ---------- */
+.overlay{position:fixed;inset:0;z-index:20;background:rgba(18,10,36,.7);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px}
+.overlay.show{display:flex}
+.success{background:var(--cream);border-radius:26px;max-width:420px;width:100%;padding:34px 26px 26px;text-align:center;animation:rise .5s cubic-bezier(.2,.9,.3,1.3)}
+@keyframes rise{from{opacity:0;transform:translateY(30px) scale(.95)}}
+.hands{font-size:62px;animation:beat 1.4s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.12)}}
+.success h3{font-family:'Moul',serif;font-weight:400;font-size:20px;color:var(--plum);margin:14px 0 8px;line-height:1.7}
+.success p{font-size:14.5px;color:var(--muted);line-height:1.8}
+.success .actions{display:grid;gap:10px;margin-top:22px}
+.btn2{font:inherit;font-size:15px;font-weight:600;border-radius:14px;padding:13px;cursor:pointer;border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.btn2.primary{background:linear-gradient(135deg,var(--plum),var(--rose));color:#fff;border:0}
+.heart{position:fixed;z-index:30;pointer-events:none;font-size:22px;animation:float 3s ease-out forwards}
+@keyframes float{to{transform:translateY(-70vh) rotate(25deg);opacity:0}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(100px);background:#2a1d33;color:#fff;padding:11px 20px;border-radius:30px;font-size:14px;z-index:40;transition:transform .3s}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ---------- Admin ---------- */
+.admin-link{background:none;border:0;color:rgba(255,255,255,.35);font:inherit;font-size:12px;cursor:pointer;margin-top:14px;padding:6px 10px}
+.admin-link:hover{color:rgba(255,255,255,.8)}
+.login{background:var(--cream);border-radius:22px;max-width:360px;width:100%;padding:28px 22px;text-align:center}
+.login h3{font-family:'Moul',serif;font-weight:400;font-size:17px;color:var(--plum);line-height:1.8}
+.login p{font-size:13px;color:var(--muted);margin:4px 0 16px}
+.login input{padding-left:14px;text-align:center}
+.login .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.login .msg{font-size:13px;color:var(--err);margin-top:10px;min-height:18px}
+
+#report{display:none;position:fixed;inset:0;z-index:50;background:#e9e4ee;overflow:auto;color:#111;font-family:'Kantumruy Pro',sans-serif}
+#report.show{display:block}
+.r-toolbar{position:sticky;top:0;z-index:2;display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;padding:12px 16px;background:var(--night);color:#fff}
+.r-toolbar select,.r-toolbar button{font:inherit;font-size:14px;border-radius:10px;padding:9px 14px;border:0;cursor:pointer}
+.r-toolbar select{background:#fff;color:var(--ink);padding-left:12px;width:auto}
+.r-toolbar .print{background:linear-gradient(135deg,var(--gold),#e0a24a);color:#3a1d08;font-weight:700}
+.r-toolbar .close{background:rgba(255,255,255,.15);color:#fff}
+.page{background:#fff;max-width:1120px;margin:20px auto;padding:28px 30px;box-shadow:0 6px 30px rgba(0,0,0,.15)}
+.r-head{text-align:center;border-bottom:2px solid #7a2e3a;padding-bottom:12px;margin-bottom:14px}
+.r-head .t1{font-family:'Moul',serif;font-size:17px;color:#7a2e3a;line-height:1.9}
+.r-head .t2{font-size:13px;color:#444}
+.r-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12.5px;color:#333;margin-bottom:10px}
+.r-meta b{color:#7a2e3a}
+table.r{width:100%;border-collapse:collapse;font-size:11.5px}
+table.r th{background:#7a2e3a;color:#fff;font-weight:600;padding:7px 6px;text-align:left;white-space:nowrap}
+table.r td{border-bottom:1px solid #ddd;padding:6px;vertical-align:top;word-break:break-word}
+table.r tr:nth-child(even) td{background:#faf6f8}
+table.r td.n{text-align:center;color:#666;width:32px}
+.r-foot{margin-top:14px;font-size:11px;color:#777;display:flex;justify-content:space-between}
+.r-empty{text-align:center;padding:40px;color:#777}
+
+@media print{
+  @page{size:A4 landscape;margin:10mm}
+  body{background:#fff!important}
+  body > *:not(#report){display:none!important}
+  #report{display:block!important;position:static;background:#fff;overflow:visible}
+  .r-toolbar{display:none!important}
+  .page{box-shadow:none;margin:0;padding:0;max-width:none}
+  table.r thead{display:table-header-group}
+  table.r tr{page-break-inside:avoid}
+  table.r th{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  table.r tr:nth-child(even) td{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+@media (max-width:560px){
+  .grid2{grid-template-columns:1fr}
+  .card{padding:26px 18px 22px}
+  header{padding-top:40px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<div class="wrap">
+  <header>
+    <div class="emblem" aria-hidden="true"><span>៣៣</span><small>PROMOTION</small></div>
+    <div class="uni">សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល · ជំនាន់ទី៣៣</div>
+    <div class="uni-en">University of Health Sciences · 33rd Promotion</div>
+    <h1>មិត្តភាពជារៀងរហូត</h1>
+    <div class="tagline">Same class, same dreams — friends for life.</div>
+    <p class="intro">
+      យើងធ្លាប់រៀនជាមួយគ្នា ត្រៀមប្រឡងជាមួយគ្នា និងចែករំលែកក្តីសុបិនតែមួយ។
+      ទោះបីយើងបែកគ្នាទៅបម្រើការងារនៅទីកន្លែងផ្សេងៗ ក៏ចំណងមិត្តភាពរបស់យើងមិនរលាយឡើយ។
+      សូមចំណាយពេលមួយនាទី ដើម្បីភ្ជាប់ទំនាក់ទំនងគ្នាឡើងវិញ។ 💛
+    </p>
+  </header>
+
+  <section class="stats" aria-label="Statistics">
+    <div class="stat"><b id="sTotal">–</b><span>មិត្តបានចូលរួម</span></div>
+    <div class="stat"><b id="sMale">–</b><span>ប្រុស</span></div>
+    <div class="stat"><b id="sFemale">–</b><span>ស្រី</span></div>
+  </section>
+
+  <main class="card">
+    <div class="card-head">
+      <h2>ព័ត៌មានទំនាក់ទំនងរបស់អ្នក</h2>
+      <p>Your contact information · <span class="req">*</span> ចាំបាច់ត្រូវបំពេញ</p>
+    </div>
+
+    <form id="form" novalidate autocomplete="on">
+      <!-- 1. Full name (Khmer) -->
+      <div class="field" id="f-fullName">
+        <label class="lbl" for="fullName">ឈ្មោះពេញ (អក្សរខ្មែរ) <span class="req">*</span> <em>Full name in Khmer</em></label>
+        <div class="input">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+          <input type="text" id="fullName" name="fullName" placeholder="ឧ. សុខ ចាន់ថា" maxlength="100" autocomplete="name" required>
+        </div>
+        <div class="err">សូមបញ្ចូលឈ្មោះពេញជាអក្សរខ្មែរ</div>
+      </div>
+
+      <!-- 2. Gender -->
+      <div class="field" id="f-gender">
+        <label class="lbl">ភេទ <span class="req">*</span> <em>Gender</em></label>
+        <div class="gender" role="radiogroup">
+          <input type="radio" id="gM" name="gender" value="ប្រុស"><label for="gM">👨‍⚕️ ប្រុស</label>
+          <input type="radio" id="gF" name="gender" value="ស្រី"><label for="gF">👩‍⚕️ ស្រី</label>
+        </div>
+        <div class="err">សូមជ្រើសរើសភេទ</div>
+      </div>
+
+      <!-- 3. Phone -->
+      <div class="field" id="f-phone">
+        <label class="lbl" for="phone">លេខទូរស័ព្ទ <span class="req">*</span> <em>Phone</em></label>
+        <div class="input">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          <input type="tel" id="phone" name="phone" placeholder="012 345 678" maxlength="20" inputmode="tel" autocomplete="tel" required>
+        </div>
+        <div class="hint">បើអ្នកធ្លាប់បំពេញរួច ការបំពេញម្តងទៀតដោយលេខដដែល នឹងកែប្រែព័ត៌មានចាស់។</div>
+        <div class="err">លេខទូរស័ព្ទមិនត្រឹមត្រូវ (ឧ. 012345678 ឬ +855…)</div>
+      </div>
+
+      <div class="divider">ព័ត៌មានបន្ថែម · Optional</div>
+
+      <!-- 4. Workplace -->
+      <div class="field">
+        <label class="lbl" for="workplace">កន្លែងធ្វើការ <em>Workplace</em><span class="opt">ស្រេចចិត្ត</span></label>
+        <div class="input">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M10 9h4M12 7v4M9 21v-5h6v5"/></svg>
+          <input type="text" id="workplace" name="workplace" placeholder="ឧ. មន្ទីរពេទ្យបង្អែកខេត្ត..." maxlength="200" autocomplete="organization">
+        </div>
+      </div>
+
+      <!-- 8. Province / Country -->
+      <div class="field">
+        <label class="lbl" for="province">ខេត្ត / ប្រទេស <em>Province / Country</em><span class="opt">ស្រេចចិត្ត</span></label>
+        <div class="input">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <select id="province" name="province">
+            <option value="">— ជ្រើសរើស —</option>
+          </select>
+        </div>
+        <div class="input" id="countryWrap">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          <input type="text" id="country" placeholder="ឈ្មោះប្រទេស · Country name" maxlength="60">
+        </div>
+      </div>
+
+      <div class="grid2">
+        <!-- 5. Facebook -->
+        <div class="field">
+          <label class="lbl" for="facebook">Facebook<span class="opt">ស្រេចចិត្ត</span></label>
+          <div class="input">
+            <svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg>
+            <input type="text" id="facebook" name="facebook" placeholder="ឈ្មោះ ឬ Link" maxlength="200">
+          </div>
+        </div>
+        <!-- 6. Telegram -->
+        <div class="field">
+          <label class="lbl" for="telegram">Telegram<span class="opt">ស្រេចចិត្ត</span></label>
+          <div class="input">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 4 3 11l6 2 2 6 3-4 5 4 2-15z"/><path d="m9 13 8-6"/></svg>
+            <input type="text" id="telegram" name="telegram" placeholder="@username ឬ លេខ" maxlength="100">
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Email -->
+      <div class="field" id="f-email">
+        <label class="lbl" for="email">អ៊ីមែល <em>Email</em><span class="opt">ស្រេចចិត្ត</span></label>
+        <div class="input">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <input type="email" id="email" name="email" placeholder="name@example.com" maxlength="120" autocomplete="email">
+        </div>
+        <div class="err">អ៊ីមែលមិនត្រឹមត្រូវ</div>
+      </div>
+
+      <!-- Honeypot (anti-spam) -->
+      <div class="hp" aria-hidden="true"><input type="text" id="website" tabindex="-1" autocomplete="off"></div>
+
+      <div class="consent">🔒 ព័ត៌មានរបស់អ្នកនឹងប្រើសម្រាប់តែការទំនាក់ទំនងក្នុងចំណោមមិត្តរួមជំនាន់ទី៣៣ ប៉ុណ្ណោះ។ មានតែឈ្មោះប៉ុណ្ណោះដែលបង្ហាញជាសាធារណៈ។</div>
+
+      <button type="submit" class="submit" id="submitBtn"><span class="spinner"></span><span id="btnText">ផ្ញើព័ត៌មាន · Join the reunion</span></button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+  </main>
+
+  <section class="wall" id="wall" hidden>
+    <h3>ជញ្ជាំងមិត្តភាព</h3>
+    <p>Wall of Friends — មិត្តដែលបានភ្ជាប់ទំនាក់ទំនងរួចហើយ</p>
+    <div class="names" id="names"></div>
+  </section>
+
+  <footer>
+    <div class="q">“Distance means so little when someone means so much.”</div>
+    <div>ពីអាវសសម្រាប់ថ្នាក់រៀន ដល់អាវសសម្រាប់បម្រើប្រជាជន — យើងនៅតែជាមិត្តភក្តិ។</div>
+    <div style="margin-top:10px;opacity:.7">UHS · 33rd Promotion</div>
+    <button class="admin-link" id="adminLink" type="button">🔒 Admin</button>
+  </footer>
+</div>
+
+<!-- Success popup -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="okTitle">
+  <div class="success">
+    <div class="hands">🤝</div>
+    <h3 id="okTitle">អរគុណមិត្ត!</h3>
+    <p id="okText">ព័ត៌មានរបស់អ្នកត្រូវបានរក្សាទុកដោយជោគជ័យ។ សូមជួយចែករំលែកតំណនេះទៅមិត្តរួមថ្នាក់ផ្សេងទៀត ដើម្បីយើងជួបជុំគ្នាឲ្យបានគ្រប់គ្នា។</p>
+    <div class="actions">
+      <button class="btn2 primary" id="shareBtn">📤 ចែករំលែកទៅមិត្ត · Share</button>
+      <button class="btn2" id="closeBtn">បិទ · Close</button>
+    </div>
+  </div>
+</div>
+<!-- Admin login -->
+<div class="overlay" id="loginOverlay" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+  <form class="login" id="loginForm">
+    <div style="font-size:38px">🔐</div>
+    <h3 id="loginTitle">សម្រាប់អ្នកគ្រប់គ្រងប៉ុណ្ណោះ</h3>
+    <p>Admin only · Export contact report (PDF)</p>
+    <input type="password" id="adminKey" placeholder="ពាក្យសម្ងាត់ · Password" autocomplete="current-password" required>
+    <div class="msg" id="loginMsg"></div>
+    <div class="actions">
+      <button type="button" class="btn2" id="loginCancel">បោះបង់</button>
+      <button type="submit" class="btn2 primary" id="loginBtn">ចូល · Open</button>
+    </div>
+  </form>
+</div>
+
+<!-- Printable report -->
+<div id="report">
+  <div class="r-toolbar">
+    <label>តម្រៀប:
+      <select id="rSort">
+        <option value="name">តាមឈ្មោះ (ក-អ)</option>
+        <option value="date">តាមកាលបរិច្ឆេទចុះឈ្មោះ</option>
+        <option value="location">តាមខេត្ត/ប្រទេស</option>
+        <option value="gender">តាមភេទ</option>
+      </select>
+    </label>
+    <button class="print" id="rPrint">🖨️ Print / Save as PDF</button>
+    <button class="close" id="rClose">✕ បិទ</button>
+  </div>
+  <div class="page">
+    <div class="r-head">
+      <div class="t2">សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល · University of Health Sciences</div>
+      <div class="t1">បញ្ជីទំនាក់ទំនងមិត្តរួមថ្នាក់ ជំនាន់ទី៣៣</div>
+      <div class="t2">Contact List of 33rd Promotion Classmates</div>
+    </div>
+    <div class="r-meta" id="rMeta"></div>
+    <div id="rBody"></div>
+    <div class="r-foot"><span>ឯកសារសម្ងាត់ — សម្រាប់ប្រើក្នុងចំណោមមិត្តរួមជំនាន់ប៉ុណ្ណោះ · Confidential</span><span id="rGen"></span></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ======== CONFIG: paste your Apps Script /exec URL here ======== */
+const API_URL = 'https://script.google.com/macros/s/AKfycbzYk4gygeu3f33ul-oOxqIU42M9iFlqZN-zunnMcT5voa_fOHMJCneO8lqwZgMFaaU/exec';
+/* =============================================================== */
+
+const PROVINCES = ['រាជធានីភ្នំពេញ','បន្ទាយមានជ័យ','បាត់ដំបង','កំពង់ចាម','កំពង់ឆ្នាំង','កំពង់ស្ពឺ','កំពង់ធំ','កំពត','កណ្ដាល','កែប','កោះកុង','ក្រចេះ','មណ្ឌលគិរី','ឧត្ដរមានជ័យ','ប៉ៃលិន','ព្រះសីហនុ','ព្រះវិហារ','ពោធិ៍សាត់','ព្រៃវែង','រតនគិរី','សៀមរាប','ស្ទឹងត្រែង','ស្វាយរៀង','តាកែវ','ត្បូងឃ្មុំ'];
+const OVERSEAS = '__overseas__';
+
+const $ = id => document.getElementById(id);
+const sel = $('province');
+PROVINCES.forEach(p => sel.add(new Option(p, p)));
+sel.add(new Option('🌏 នៅបរទេស · Overseas', OVERSEAS));
+sel.addEventListener('change', () => {
+  const show = sel.value === OVERSEAS;
+  $('countryWrap').style.display = show ? 'block' : 'none';
+  if (show) $('country').focus();
+});
+
+/* ---------- Validation ---------- */
+const KHMER = /[\u1780-\u17FF]/;
+function normPhone(raw){
+  let s = String(raw||'').replace(/[\s\-().]/g,'');
+  if (s.startsWith('00')) s = '+' + s.slice(2);
+  if (/^\+855/.test(s)) s = '0' + s.slice(4);
+  else if (/^855\d{8,9}$/.test(s)) s = '0' + s.slice(3);
+  if (/^0\d{8,9}$/.test(s) || /^\+\d{8,15}$/.test(s)) return s;
+  if (/^[1-9]\d{7,8}$/.test(s)) return '0' + s;
+  return '';
+}
+function setInvalid(id, bad){ $(id).classList.toggle('invalid', bad); return !bad; }
+function validate(){
+  const name = $('fullName').value.trim();
+  const g = document.querySelector('input[name=gender]:checked');
+  const email = $('email').value.trim();
+  const ok = [
+    setInvalid('f-fullName', !name || !KHMER.test(name)),
+    setInvalid('f-gender', !g),
+    setInvalid('f-phone', !normPhone($('phone').value)),
+    setInvalid('f-email', !!email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))
+  ];
+  const firstBad = document.querySelector('.field.invalid');
+  if (firstBad) firstBad.scrollIntoView({behavior:'smooth', block:'center'});
+  return ok.every(Boolean);
+}
+['fullName','phone','email'].forEach(id => $(id).addEventListener('input', () => $('f-'+id).classList.remove('invalid')));
+document.querySelectorAll('input[name=gender]').forEach(r => r.addEventListener('change', () => $('f-gender').classList.remove('invalid')));
+
+/* ---------- API (GET only — no CORS preflight) ---------- */
+async function api(params){
+  if (!API_URL.startsWith('https://script.google.com/')) throw new Error('API_URL មិនទាន់កំណត់ (not configured)');
+  const res = await fetch(API_URL + '?' + new URLSearchParams(params).toString());
+  const data = await res.json();
+  if (!data.ok) throw new Error(data.error || 'Server error');
+  return data;
+}
+
+/* ---------- Submit ---------- */
+$('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  $('formMsg').style.display = 'none';
+  if (!validate()) return;
+
+  const btn = $('submitBtn');
+  btn.disabled = true; btn.classList.add('loading');
+  $('btnText').textContent = 'កំពុងផ្ញើ...';
+
+  const location = sel.value === OVERSEAS
+    ? ('បរទេស' + ($('country').value.trim() ? ' – ' + $('country').value.trim() : ''))
+    : sel.value;
+
+  try {
+    const r = await api({
+      action:'submit',
+      fullName:$('fullName').value.trim(),
+      gender:document.querySelector('input[name=gender]:checked').value,
+      phone:normPhone($('phone').value),
+      workplace:$('workplace').value.trim(),
+      facebook:$('facebook').value.trim(),
+      telegram:$('telegram').value.trim(),
+      email:$('email').value.trim(),
+      location,
+      website:$('website').value
+    });
+    $('okTitle').textContent = r.updated ? 'បានកែប្រែរួចរាល់!' : 'អរគុណមិត្ត!';
+    $('okText').textContent = r.updated
+      ? 'ព័ត៌មានរបស់អ្នកត្រូវបានធ្វើបច្ចុប្បន្នភាព។ សូមជួយចែករំលែកតំណនេះទៅមិត្តរួមថ្នាក់ផ្សេងទៀតផង។'
+      : 'ព័ត៌មានរបស់អ្នកត្រូវបានរក្សាទុកដោយជោគជ័យ។ សូមជួយចែករំលែកតំណនេះទៅមិត្តរួមថ្នាក់ផ្សេងទៀត ដើម្បីយើងជួបជុំគ្នាឲ្យបានគ្រប់គ្នា។';
+    $('form').reset();
+    $('countryWrap').style.display = 'none';
+    $('overlay').classList.add('show');
+    hearts();
+    loadStats();
+  } catch(err) {
+    $('formMsg').textContent = '⚠️ ' + (err.message || 'មានបញ្ហា សូមព្យាយាមម្តងទៀត');
+    $('formMsg').style.display = 'block';
+  } finally {
+    btn.disabled = false; btn.classList.remove('loading');
+    $('btnText').textContent = 'ផ្ញើព័ត៌មាន · Join the reunion';
+  }
+});
+
+/* ---------- Stats & wall ---------- */
+function countUp(el, to){
+  const from = parseInt(el.textContent) || 0, t0 = performance.now(), d = 900;
+  (function step(t){ const k = Math.min(1,(t-t0)/d); el.textContent = Math.round(from + (to-from)*k); if(k<1) requestAnimationFrame(step); })(t0);
+}
+async function loadStats(){
+  try {
+    const s = await api({action:'stats'});
+    countUp($('sTotal'), s.total); countUp($('sMale'), s.male); countUp($('sFemale'), s.female);
+    if (s.names && s.names.length){
+      $('wall').hidden = false;
+      $('names').innerHTML = '';
+      s.names.forEach((n,i) => {
+        const c = document.createElement('span');
+        c.className = 'chip'; c.textContent = n;
+        c.style.animationDelay = Math.min(i*30, 900) + 'ms';
+        $('names').appendChild(c);
+      });
+    }
+  } catch(e) { /* stats are decorative; ignore */ }
+}
+loadStats();
+
+/* ---------- Success actions ---------- */
+$('closeBtn').onclick = () => $('overlay').classList.remove('show');
+$('overlay').onclick = e => { if (e.target === $('overlay')) $('overlay').classList.remove('show'); };
+$('shareBtn').onclick = async () => {
+  const data = { title:'UHS ជំនាន់ទី៣៣ · មិត្តភាពជារៀងរហូត', text:'មិត្តរួមជំនាន់ទី៣៣ សូមបំពេញព័ត៌មានទំនាក់ទំនងនៅទីនេះ 💛', url:location.href.split('#')[0] };
+  try {
+    if (navigator.share) await navigator.share(data);
+    else { await navigator.clipboard.writeText(data.text + '\n' + data.url); toast('បានចម្លងតំណ · Link copied'); }
+  } catch(e) {}
+};
+function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2200); }
+function hearts(){
+  const icons = ['💛','🤍','💗','✨','🎓'];
+  for (let i=0;i<22;i++){
+    const h = document.createElement('div');
+    h.className = 'heart'; h.textContent = icons[i % icons.length];
+    h.style.left = Math.random()*100 + 'vw'; h.style.bottom = '-30px';
+    h.style.animationDelay = Math.random()*0.8 + 's';
+    h.style.fontSize = 16 + Math.random()*18 + 'px';
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 4000);
+  }
+}
+
+/* ---------- Admin: password-protected PDF report ---------- */
+let reportRows = [], reportGenerated = '';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+$('adminLink').onclick = () => {
+  $('loginMsg').textContent = ''; $('adminKey').value = '';
+  $('loginOverlay').classList.add('show');
+  setTimeout(() => $('adminKey').focus(), 50);
+};
+$('loginCancel').onclick = () => $('loginOverlay').classList.remove('show');
+$('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const btn = $('loginBtn'); btn.disabled = true; btn.textContent = 'កំពុងផ្ទុក...';
+  $('loginMsg').textContent = '';
+  try {
+    const r = await api({ action:'list', key:$('adminKey').value });
+    reportRows = r.rows || []; reportGenerated = r.generated || '';
+    $('adminKey').value = '';            // password is not kept anywhere
+    $('loginOverlay').classList.remove('show');
+    renderReport();
+    $('report').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  } catch(err) {
+    $('loginMsg').textContent = err.message;
+  } finally {
+    btn.disabled = false; btn.textContent = 'ចូល · Open';
+  }
+});
+
+function sortedRows(){
+  const by = $('rSort').value, km = (a,b) => String(a).localeCompare(String(b), 'km');
+  const rows = reportRows.slice();
+  if (by === 'name') rows.sort((a,b) => km(a.fullName, b.fullName));
+  if (by === 'date') rows.sort((a,b) => km(a.timestamp, b.timestamp));
+  if (by === 'location') rows.sort((a,b) => (!a.location) - (!b.location) || km(a.location, b.location) || km(a.fullName, b.fullName));
+  if (by === 'gender') rows.sort((a,b) => km(a.gender, b.gender) || km(a.fullName, b.fullName));
+  return rows;
+}
+function renderReport(){
+  const rows = sortedRows();
+  const male = rows.filter(r => r.gender === 'ប្រុស').length;
+  const female = rows.filter(r => r.gender === 'ស្រី').length;
+  $('rMeta').innerHTML =
+    `<span>សរុប: <b>${rows.length}</b> នាក់ &nbsp;·&nbsp; ប្រុស: <b>${male}</b> &nbsp;·&nbsp; ស្រី: <b>${female}</b></span>` +
+    `<span>កាលបរិច្ឆេទ: <b>${esc(reportGenerated)}</b></span>`;
+  $('rGen').textContent = 'Generated ' + reportGenerated;
+  if (!rows.length){ $('rBody').innerHTML = '<div class="r-empty">មិនទាន់មានទិន្នន័យ · No contacts yet</div>'; return; }
+  $('rBody').innerHTML =
+    '<table class="r"><thead><tr><th>ល.រ</th><th>ឈ្មោះពេញ</th><th>ភេទ</th><th>ទូរស័ព្ទ</th><th>កន្លែងធ្វើការ</th><th>ខេត្ត/ប្រទេស</th><th>Facebook</th><th>Telegram</th><th>អ៊ីមែល</th></tr></thead><tbody>' +
+    rows.map((r,i) => `<tr><td class="n">${i+1}</td><td><b>${esc(r.fullName)}</b></td><td>${esc(r.gender)}</td><td style="white-space:nowrap">${esc(r.phone)}</td><td>${esc(r.workplace)}</td><td>${esc(r.location)}</td><td>${esc(r.facebook)}</td><td>${esc(r.telegram)}</td><td>${esc(r.email)}</td></tr>`).join('') +
+    '</tbody></table>';
+}
+$('rSort').onchange = renderReport;
+$('rPrint').onclick = () => {
+  const t = document.title;
+  document.title = 'UHS33_Contact_List_' + (reportGenerated.slice(0,10) || 'report'); // default PDF file name
+  window.print();
+  setTimeout(() => document.title = t, 1000);
+};
+$('rClose').onclick = () => {
+  $('report').classList.remove('show');
+  document.body.style.overflow = '';
+  reportRows = []; $('rBody').innerHTML = ''; // clear data from the page
+};
+
+/* ---------- Constellation sky: stars that connect, like friends ---------- */
+(function(){
+  const c = $('sky'), ctx = c.getContext('2d');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let W, H, stars = [], dpr = Math.min(window.devicePixelRatio || 1, 2);
+  function resize(){
+    W = innerWidth; H = innerHeight; c.width = W*dpr; c.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const n = Math.round(Math.min(90, W*H/14000));
+    stars = Array.from({length:n}, () => ({
+      x:Math.random()*W, y:Math.random()*H*0.85, r:Math.random()*1.6+0.4,
+      vx:(Math.random()-.5)*.15, vy:(Math.random()-.5)*.15, tw:Math.random()*Math.PI*2
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const link = Math.min(140, W/6);
+    for (let i=0;i<stars.length;i++){
+      const a = stars[i];
+      for (let j=i+1;j<stars.length;j++){
+        const b = stars[j], dx=a.x-b.x, dy=a.y-b.y, d=Math.hypot(dx,dy);
+        if (d < link){
+          ctx.strokeStyle = 'rgba(242,196,109,' + (0.22*(1-d/link)) + ')';
+          ctx.lineWidth = .7; ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+        }
+      }
+    }
+    stars.forEach(s => {
+      s.x += s.vx; s.y += s.vy; s.tw += .03;
+      if (s.x<0||s.x>W) s.vx*=-1; if (s.y<0||s.y>H*.9) s.vy*=-1;
+      ctx.fillStyle = 'rgba(255,245,220,' + (0.55 + Math.sin(s.tw)*0.35) + ')';
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  addEventListener('resize', resize); resize(); draw();
+})();
+</script>
+</body>
+</html>
